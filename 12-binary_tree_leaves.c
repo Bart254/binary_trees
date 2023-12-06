@@ -7,7 +7,7 @@
  */
 size_t binary_tree_leaves(binary_tree_t *tree)
 {
-	static size_t no_of_leaves = 0;
+	static size_t no_of_leaves;
 
 	if (tree == NULL)
 		return (0);

@@ -11,7 +11,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	binary_tree_t *sib;
 
 	if (tree == NULL)
-		return 0;
+		return (0);
 	if (tree->left == NULL && tree->right == NULL)
 	{
 		if (tree->parent == NULL)
@@ -26,7 +26,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	}
 	left_tree = 1 * binary_tree_is_perfect(tree->left);
 	right_tree = 1 * binary_tree_is_perfect(tree->right);
-	return perf_comp(left_tree, right_tree);
+	return (perf_comp(left_tree, right_tree));
 }
 
 /**

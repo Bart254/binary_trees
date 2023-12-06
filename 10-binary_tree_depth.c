@@ -11,7 +11,8 @@ size_t binary_tree_depth(binary_tree_t *tree)
 
 	if (tree == NULL)
 		return (0);
-	for(depth = 0; tree->parent; tree = tree->parent, depth++);
+	for (depth = 0; tree->parent; tree = tree->parent, depth++)
+		;
 	return (depth);
 }
 
